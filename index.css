@@ -48,6 +48,7 @@ margin-left: 80px;
     background: -webkit-linear-gradient(90deg, #a80b32,#ab1fad,#4b94e2);/* Chrome 10-25, Safari 5.1-6 */ background: linear-gradient(90deg, #a80b32,#ab1fad,#4b94e2);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     width: 100%;
    height: 100%;
+   
     }
 .main_block_text{
     color: #fff;
@@ -79,11 +80,14 @@ margin-left: 80px;
         color: #fff;
         font-size: 16px;
     }
+    .main-img{
+        position: absolute;
+    }
 .main-img img{
    display: block;
  margin-top: 140px;
   left: 900px;
-position: absolute;
+position: relative;
 margin-bottom: 100px;
 border-radius: 60%;
 border: 2px solid #fff;
@@ -232,7 +236,7 @@ font-size: 30px;
 }
 @media (max-width:320px) {
     .header{
-        width: 295%;
+        width: 360%;
     }
     .header_link::after{
         content: '';
@@ -240,85 +244,97 @@ font-size: 30px;
         display: block;
         border: 2px solid #fff;
         height: 2px;
-        width: 930px;
+        width: 1150px;
     }
     .page{
-        width: 295%;
-        height: 1300px;
+        min-width: 360%;
+        height: 2200px;
+        
     }
     .menu_link{
-        max-width: 500px;
+        max-width: 200px;
         margin: 0;
     }
     .menu_item a {
-        font-size: 60px;
+        font-size: 80px;
         padding: 50px;
-       margin-left: 50px;
+        margin-left: 50px;
     }
     .menu-list{
         margin: 0px;
     }
     .main-title{
-       
+        
         width: 700px;
+        
     }
     .main_block_text{
-        margin-top: 400px;
-        font-size: 60px;
+        margin-top: 650px;
+        font-size: 80px;
         text-align: center;
-       margin-left: 250px;
+        min-width: 1000px;
+       margin-left:50px;
     }
     .main_btn{
- width: 200px;
-        height: 70px;
-        margin-left: 370px;
-        margin-top: -500px;
+ width: 350px;
+        height: 150px;
+        margin-left: 400px;
+        margin-top: 150px;
     }
     .main_btn a{
      font-size: 7vh;
     }
     .main-block-item{
-        margin-left: 200px;
-        font-size: 50px;
-        min-width: 100%;
+        margin-left: 100px;
+        font-size: 80px;
+        min-width: 1000px;
     }
     .main_block_title{
-        font-size: 55px;
+        font-size: 70px;
         text-align: center;
-        margin-left: 250px;
+        margin-left: 60px;
         margin-bottom: 0px;
+        font-weight: 300;
+        min-width: 1000px;
     }
     .price_title-title::after{
         display: none;
     }
     .main-img {
         display: flex;
-        margin-left: -550px;
-        position: absolute;
+       position: absolute;
         margin-top: 100px;
     }
     .main-img img{
+        position: relative;
+        width: 500px;
+        height: 570px;
+        margin-left: -550px;
+        margin-bottom: 50px;
         border: 4px solid #fff;
     }
     .services-title{
-        margin-left: 350px;
-        font-size: 80px;
+        margin-left: 400px;
+        font-size: 100px;
     }
    .services_сomponents-title-1 h3{
     font-size: 70px;
+    margin-left: -250px;
+    min-width: 1000px;
     }
     .services_сomponents-title-2 h3{
-        margin-left: -240px;
+        margin-left: -400px;
         font-size: 70px;
+        min-width: 1000px;
     }
    .services_сomponents-title-1 p{
-    font-size: 50px;
+    font-size: 70px;
     min-width: 700px;
-    margin-left: -200px;
+    margin-left: -100px;
    }
    .services_сomponents-title-2 p{
-    margin-left: -300px;
-    font-size: 50px;
+    margin-left: -210px;
+    font-size: 60px;
     min-width: 600px;
    }
    .services_сomponents-title-1 button{
@@ -326,7 +342,7 @@ font-size: 30px;
     height: 80px;
     font-size: 40px;
     color: #fff;
-    margin-left: -20px;
+    margin-left: 80px;
    }
    .services_сomponents-title-2 button{
     width: 300px;
@@ -334,19 +350,19 @@ font-size: 30px;
     font-size: 40px;
     color: #fff;
     background: rgb(83, 88, 153);
-    margin-left: -270px;
+    margin-left: -80px;
    }
    .price_title-title{
-    margin-left: 420px;
+    margin-left: 490px;
     font-size: 70px;
    }
    .price_title h3{
-    font-size: 60px;
+    font-size: 80px;
     min-width: 900px;
     margin-left: 40px;
    }
    .development{
-    width: 295%;
+    width: 360%;
         height: 1600px;
    }
    .development h2{
@@ -354,20 +370,23 @@ font-size: 30px;
    }
    .dev_title{
     font-size: 50px;
+    min-width: 970px;
    }
    .footer_contact{
     margin-left: 130px;
    }
    .footer_container h2{
-  margin-left: 380px;
+  margin-left: 450px;
+  font-size: 50px;
    }
    .tel p , .email h3{
-    font-size: 34px;
-    margin-right: 40px;
+    font-size: 44px;
+   margin-left: -120px;
     text-align: center;
+    min-width: 500px;
    }
    .tel a , .email p {
-    font-size: 40px;
-    margin-left: -30px;
+    font-size: 50px;
+    margin-left: -70px;
    }
 }
